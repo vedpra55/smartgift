@@ -19,7 +19,7 @@ const refundPolicy = [
 ];
 
 const Container = async ({ product }) => {
-  let url = `${process.env.NEXT_PUBLIC_URL}/${product.slug}`;
+  let url = `https://smartgift.vercel.app/${product.slug}`;
   let uri = `hello i want to buy ${product.name} price is ${product.discountPrice} Thankyou *URL* ${url}`;
   let encoded = encodeURI(uri);
 
